@@ -1,0 +1,95 @@
+.fa {
+  justify-content: right;
+  text-align: center;
+  display: inline-table;
+  align-content: right;
+  display: flex;
+  /*padding: 15px;*/
+  width: 30px;
+  text-align: center;
+  text-decoration: none;
+  margin: 5px 2.5px;
+  transition: 0.5s;
+}
+.fa:hover {
+  opacity: 0.7;
+  transform: scale(1.08);
+}
+hr {
+  height: 30px;
+  transform: rotate(90deg);
+}
+.fa-facebook {
+  background-color: #283579;
+  color: white;
+}
+.fa-instagram {
+  background-color: #283579;
+  color: white;
+}
+.fa-linkedin {
+  background-color: #283579;
+  color: white;
+}
+/*
+.fa-instagram:hover {
+  background-image: linear-gradient(
+    to top right,
+    #f58529,
+    #feda77,
+    #dd2a7b,
+    #8134af,
+    #515bd4
+  );
+  color: white;
+}
+*/
+.bottom {
+  padding: 1vh;
+}
+.grid-footer {
+  display: grid;
+  place-items: center;
+  text-align: left;
+  /* grid-template-columns: 23.5% 2% 23.5% 2% 23.5% 2% 23.5%; */
+  grid-template-columns: repeat(4, 1fr);
+  color: white;
+  min-width: 10vh;
+  overflow-wrap: break-word;
+}
+.grid-footer > div {
+  text-align: left;
+  padding: 10px;
+  font-size: 0.7em;
+  /* border: 1px solid white; */
+}
+
+#social {
+  /* border: 3px solid black; */
+  display: grid;
+  background: #283579;
+  padding: 2rem;
+  color: white;
+  font-size: 0.9rem;
+  /* margin-top: 3rem; */
+  text-align: center;
+}
+/* .vl {
+  border: 1px solid white;
+  min-height: 15vh;
+  max-height: auto;
+  max-width: 1px;
+} */
+.footer-img {
+  align-items: right;
+  height: 80%;
+  width: auto;
+}
+
+@media screen and (max-width: 746px) {
+  .grid-footer {
+    display: flex;
+    flex-direction: column;
+    row-gap: 0.75rem;
+  }
+}
